@@ -1,0 +1,2 @@
+# No external Python dependencies required - uses llm CLI tool
+# Install llm with: pip install llm

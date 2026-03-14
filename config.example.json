@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "direct": "Classify the following text as positive, negative, or neutral:",
+    "cot": "Let's think step by step. Classify the following text as positive, negative, or neutral:",
+    "expert": "You are a sentiment analysis expert. Classify the following text as positive, negative, or neutral:",
+    "few_shot": "Classify the sentiment:\n- 'I love this!' -> positive\n- 'Terrible experience' -> negative\n- 'It's okay' -> neutral\n\nNow classify:"
+  }
+}
