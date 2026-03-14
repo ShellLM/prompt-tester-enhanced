@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompt-tester-enhanced"
+version = "1.0.0"
+description = "Enhanced framework for testing prompt variations with multi-provider support, quality metrics, and similarity scoring"
+readme = "README_ENHANCED.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Thomas", email = "ir.thomasthomas@gmail.com"}
+]
+keywords = ["llm", "prompt", "testing", "openai", "anthropic", "prompt-engineering"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "llm>=0.10",
+]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "twine",
+    "pytest",
+]
+visualization = [
+    "matplotlib",
+    "numpy",
+]
+openai = ["openai"]
+anthropic = ["anthropic"]
+
+[project.scripts]
+prompt-tester = "prompt_tester:main"
+prompt-tester-enhanced = "prompt_tester_enhanced:main"
+
+[project.urls]
+Homepage = "https://github.com/ShellLM/prompt-tester-enhanced"
+Repository = "https://github.com/ShellLM/prompt-tester-enhanced"
+Documentation = "https://github.com/ShellLM/prompt-tester-enhanced#readme"
+
+[tool.setuptools]
+py-modules = ["prompt_tester", "prompt_tester_enhanced"]
